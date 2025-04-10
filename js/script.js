@@ -5,7 +5,7 @@ let section = document.querySelector("section");
 let url = "https://newsapi.org/v2/everything?q=apple&apiKey=a8c5fb917bbc49e7a4bce9555d8ab1fa";
 
 //fetch data from api
-fetch(url)
+fetch(url, {mode: 'cors'})
     //parse response to json
     .then(response => {return response.json()})
     //handle data
